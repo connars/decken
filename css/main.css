@@ -1,0 +1,60 @@
+:root {
+    --green: #849E87 ; 
+    --bg : #E3E2DE; 
+    --yellow: ; 
+    --gray: linear-gradient(127.17deg, #EFB61E -3.83%, #F4A115 108.77%);
+}
+
+#consult {
+    background-color: var(--green);
+    color: white;
+    padding: 40px 0;
+}
+
+.consult__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.consult__left {
+    max-width: 400px;
+}
+
+.consult__right{
+    max-width: 400px;
+}
+
+.consult__left h2{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.consult__right form{
+    display: grid;
+    gap: 20px 0px;
+}
+.consult__right form > input{
+    border-radius: 100px;
+    border: none;
+    padding: 10px;
+}
+
+.consult__right form > label {
+    font-size: 12px;
+}
+
+.consult__right form > button{
+    border-radius: 100px;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.checkbox-input {
+    display: flex;
+}
+
+.checkbox-input input {
+    margin-right: 10px;
+}

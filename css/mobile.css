@@ -1,0 +1,18 @@
+@media screen and (max-width: 900px) {
+    .consult__left h2{
+        text-align: center;
+    }
+
+    .consult__left p{
+        text-align: center;
+    }
+
+    .consult__left-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .consult__left-img img{
+        max-width: 40px;
+    }
+}
