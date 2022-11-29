@@ -28,25 +28,25 @@ cl.addEventListener('click', function () {
     }
 });
 
-let swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 66,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper__top-next",
-        prevEl: ".swiper__top-prev"
-    }
-});
-
-if (window.innerWidth < 900) {
+if (window.innerWidth > 900) {
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 66,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper__top-next",
+            prevEl: ".swiper__top-prev"
+        }
+    });
+} else {
     document.querySelector('.swiper-pagination').remove()
-    swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 1,
         slidesPerGroup: 1,
