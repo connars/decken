@@ -90,7 +90,7 @@
     .about__img {
         border-radius: 30px;
         max-width: 380px;
-        height: 383px;
+        height: 283px;
         object-fit: cover;
         transition: 0.3s all ease;
     }
