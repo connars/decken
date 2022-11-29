@@ -5,6 +5,71 @@
     --gray: linear-gradient(127.17deg, #EFB61E -3.83%, #F4A115 108.77%);
 }
 
+/* slide */
+.menu-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+}
+
+.menu-container {
+    background-color: white;
+    height: 100vh;
+    width: 440px;
+    position: absolute;
+    right: 0;
+}
+
+/* HEADER */
+
+.burger-icon {
+    background-color: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px 0px;
+    cursor: pointer;
+}
+
+.burger-icon:hover .line3 {
+    width: 10px;
+}
+
+.burger-icon:hover .line2 {
+    width: 20px;
+}
+
+.line1 , .line2 , .line3 {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+
+    transition: 0.3s;
+}
+
+#header {
+    background-color: white;
+    padding: 10px 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left, .header__center, .header__right {
+    display: flex;
+}
+/* CONSULT */
+
 #consult {
     background-color: var(--green);
     color: white;
