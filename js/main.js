@@ -15,7 +15,6 @@ burger.addEventListener('click', function(){
     } else {
         menu.classList.toggle('active');
         bg.classList.toggle('active');
-        bg.style.transition = "0.5s";
     }
 });
 

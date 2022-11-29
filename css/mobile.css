@@ -47,4 +47,37 @@
         font-weight: 700;
         padding: 10px 10px;
     }
+
+    .about__title svg {
+        width: 40px;
+    }
+
+    .about__title {
+        font-size: 24px;
+    }
+
+    .hero__bottom {
+        display: grid;
+        justify-content: center;
+        
+    }
+
+    .hero__bottom-item {
+       
+    }
+
+    .hero__bottom-item:nth-child(2) p {
+        order: -1;
+        text-align: right;
+    }
+
+    .hero__top-oneButton, .hero__top-twoButton {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 10px;
+    }
+
+    .hero__top h1 {
+        font-size: 40PX;
+    }
 }

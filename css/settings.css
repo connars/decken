@@ -20,7 +20,7 @@
 }
 
 body {
-    background: #F8F9FD;
+    background: #E3E2DE;
     font-family: 'Play', sans-serif;
     overflow-x: hidden;
 }
@@ -36,4 +36,12 @@ body {
 
 .btn-main:hover {
     box-shadow: 0px 0px 20px var(--green);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
