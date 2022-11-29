@@ -59,10 +59,7 @@
     .hero__bottom {
         display: grid;
         justify-content: center;
-
     }
-
-    .hero__bottom-item {}
 
     .hero__bottom-item:nth-child(2) p {
         order: -1;
