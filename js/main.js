@@ -44,7 +44,7 @@ let swiper = new Swiper(".mySwiper", {
     }
 });
 
-if (window.outerWidth < 900) {
+if (window.innerWidth < 900) {
     document.querySelector('.swiper-pagination').remove()
     swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
