@@ -79,4 +79,19 @@
     .hero__top h1 {
         font-size: 40PX;
     }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 82px;
+        padding: 0;
+    }
+
+    .about__img {
+        border-radius: 30px;
+        max-width: 380px;
+        height: 383px;
+        object-fit: cover;
+        transition: 0.3s all ease;
+    }
 }
