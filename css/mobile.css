@@ -20,4 +20,25 @@
         width: 100%;
     }
 
+    .header__center {
+        order: -1;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__center img{
+       width: 90px;
+    }
+
+    .header__left {
+        display: none;
+    }
+
+    .header__right {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
 }
