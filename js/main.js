@@ -28,7 +28,7 @@ cl.addEventListener('click', function () {
     }
 });
 
-if (window.innerWidth > 900) {
+if (window.outerWidth > 900) {
     let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 66,
