@@ -195,20 +195,8 @@
     color: black;
 }
 
-.test {
-    overflow: hidden;
-    width: 240px;
-    height: 60px;
-    padding: 0;
 
-}
 
-.test2 {
-    display: flex;
-    
-    transition: 0.3s;
-    cursor: pointer;
-}
 
 .normal {
     padding: 20px;
