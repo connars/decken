@@ -22,6 +22,7 @@ burger.addEventListener('click', function () {
 
 cl.addEventListener('click', function () {
     if (menu.classList.contains('active')) {
+        menu.style.display = "none"
         menu.classList.remove('active');
         bg.classList.remove('active');
     } else {
@@ -60,3 +61,16 @@ if (window.outerWidth > 900) {
         }
     });
 }
+
+
+let swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: ".swiper__bottom-next",
+        prevEl: ".swiper__bottom-prev"
+    }
+});
