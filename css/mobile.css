@@ -76,7 +76,7 @@
     .hero__top h1 {
         font-size: 40PX;
     }
-    
+
     .about {
         display: flex;
         flex-direction: column;
@@ -90,5 +90,30 @@
         height: 283px;
         object-fit: cover;
         transition: 0.3s all ease;
+    }
+
+    .mySwiper2 .swiper-slide-next {
+        width: 557px;
+        height: 394px;
+        object-fit: cover;
+        z-index: 9999999;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .mySwiper2 .swiper-slide-active img {
+        width: 507px;
+        height: 322px;
+        opacity: 0.5;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+
+    .mySwiper2 .swiper-slide-next~.swiper-slide img {
+        width: 507px;
+        height: 322px;
+        opacity: 0.5;
+        z-index: 1;
+        transition: all 0.5s ease;
     }
 }
