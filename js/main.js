@@ -3,9 +3,7 @@
 let menu = document.getElementById('menu');
 let burger = document.getElementById('burger');
 let cl = document.getElementById('close');
-
 let bg = document.getElementById('shadow');
-
 
 
 burger.addEventListener('click', function () {
