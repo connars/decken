@@ -1,18 +1,18 @@
 @media screen and (max-width: 900px) {
-    .consult__left h2{
+    .consult__left h2 {
         text-align: center;
     }
 
-    .consult__left p{
+    .consult__left p {
         text-align: center;
     }
 
-    .consult__left-img{
+    .consult__left-img {
         display: flex;
         justify-content: center;
     }
 
-    .consult__left-img img{
+    .consult__left-img img {
         max-width: 40px;
     }
 
@@ -27,8 +27,8 @@
         justify-content: center;
     }
 
-    .header__center img{
-       width: 90px;
+    .header__center img {
+        width: 90px;
     }
 
     .header__left {
@@ -59,11 +59,6 @@
     .hero__bottom {
         display: grid;
         justify-content: center;
-        
-    }
-
-    .hero__bottom-item {
-       
     }
 
     .hero__bottom-item:nth-child(2) p {
@@ -71,7 +66,8 @@
         text-align: right;
     }
 
-    .hero__top-oneButton, .hero__top-twoButton {
+    .hero__top-oneButton,
+    .hero__top-twoButton {
         font-size: 14px;
         font-weight: 700;
         padding: 10px 10px;
@@ -79,5 +75,20 @@
 
     .hero__top h1 {
         font-size: 40PX;
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 82px;
+        padding: 0;
+    }
+
+    .about__img {
+        border-radius: 30px;
+        max-width: 380px;
+        height: 283px;
+        object-fit: cover;
+        transition: 0.3s all ease;
     }
 }
