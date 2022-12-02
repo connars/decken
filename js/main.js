@@ -72,3 +72,4 @@ let swiper2 = new Swiper(".mySwiper2", {
         prevEl: ".swiper__bottom-prev"
     }
 });
+

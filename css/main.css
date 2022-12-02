@@ -152,7 +152,9 @@
 
 /* HERO */
 .hero {
-    height: 95vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100%;
     display: grid;
     align-items: center;
     align-content: center;
@@ -203,34 +205,17 @@
     font-weight: 600;
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 
-
-
-
-.normal {
-    padding: 20px;
-    width: 240px !important;
-    padding: 23px 50px;
-    white-space: nowrap;
-}
-
-.hover {
+.hero__top-twoButton:hover {
+    box-shadow: 0px 0px 20px var(--green);
     background-color: var(--green);
-    border-radius: 8px;
-    width: 240px !important;
-    padding: 23px 50px;
     color: white;
-    white-space: nowrap;
-
-}
-
-.test2:hover {
-    transform: translateX(-250px);
 }
 
 .hero__bottom {
-    padding: 20px;
+    padding: 20px 50px;
     background-color: var(--green);
     box-shadow: 0px 0px 20px var(--green);
     border-radius: 20px;
@@ -241,9 +226,16 @@
 }
 
 .hero__bottom-item {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
     align-items: center;
+}
+
+.hero__bottom-item svg {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
 }
 
 .hero__bottom-item p {
@@ -322,9 +314,9 @@
     transition: 0.3s all ease;
 }
 
-.about__img:hover {
+/* .about__img:hover {
     transform: scale(1.03);
-}
+} */
 
 .about__right {
     display: flex;
