@@ -20,7 +20,7 @@
 }
 
 body {
-    background: #E3E2DE;
+    background: white;
     font-family: 'Play', sans-serif;
     overflow-x: hidden;
 }
@@ -44,4 +44,11 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+.green-text {
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
 }

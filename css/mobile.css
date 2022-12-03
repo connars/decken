@@ -57,15 +57,40 @@
     }
 
     .hero__bottom {
-        display: grid;
-        justify-content: center;
+        display: block;
+       
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        padding: 0;
     }
 
-    .hero__bottom-item:nth-child(2) p {
-        order: -1;
-        text-align: right;
+    .hero__bottom-item{
+            display: flex;
+            justify-content: flex-start;
+            background-color: var(--green);
+            /* padding: 10px; */
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
     }
 
+    #hero {
+        background-size: 100%;
+        background-position: top;
+        background-position-y: -100px;
+    }
+
+    .hero__top-buttons {
+        margin-bottom: 50px;
+    }
+
+    .hero__top {
+        margin-top: 260px;
+    }
+    .hero__bottom-item svg {
+        margin-left: 10px;
+    }
     .hero__top-oneButton,
     .hero__top-twoButton {
         font-size: 14px;
@@ -115,5 +140,9 @@
         opacity: 0.5;
         z-index: 1;
         transition: all 0.5s ease;
+    }
+
+    .steps__items {
+        columns: 1;
     }
 }
