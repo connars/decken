@@ -5,6 +5,14 @@
     --gray: linear-gradient(127.17deg, #EFB61E -3.83%, #F4A115 108.77%);
 }
 
+html {
+    overflow-x: hidden !important;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
 /* slide */
 
 #menu {
