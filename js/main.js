@@ -8,11 +8,11 @@ let bg = document.getElementById('shadow');
 
 burger.addEventListener('click', function () {
     if (menu.classList.contains('active')) {
-        menu.style.display = "none"
+        // menu.style.display = "none"
         menu.classList.remove('active');
         bg.classList.remove('active');
     } else {
-        menu.style.display = "flex"
+        // menu.style.display = "flex";
         menu.classList.toggle('active');
         bg.classList.toggle('active');
     }
@@ -20,7 +20,7 @@ burger.addEventListener('click', function () {
 
 cl.addEventListener('click', function () {
     if (menu.classList.contains('active')) {
-        menu.style.display = "none"
+        // menu.style.display = "none"
         menu.classList.remove('active');
         bg.classList.remove('active');
     } else {
