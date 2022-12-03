@@ -788,3 +788,68 @@ body {
     font-size: 23px;
     margin: 0;
 }
+
+.calc {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 900px;
+}
+
+.calc__wrapper {
+    background-color: var(--green);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.calc__wrapper form{
+    background-color: var(--green);
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+}
+
+.calc__left-top {
+    color: white;
+    font-size: 24px;
+  
+}
+
+.calc__left{
+    width: 50%;
+
+    display: grid;
+}
+
+.calc__right {
+    color: white;
+    font-size: 24px;
+    width: 50%;
+}
+
+.form-btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+}
+
+.calc__left-bottom {
+    display: grid;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+
+}
+
+.form-input::placeholder {
+
+    color: white;
+}
