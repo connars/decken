@@ -58,21 +58,21 @@
 
     .hero__bottom {
         display: block;
-       
+
         background-color: transparent;
         box-shadow: none;
         width: 100%;
         padding: 0;
     }
 
-    .hero__bottom-item{
-            display: flex;
-            justify-content: flex-start;
-            background-color: var(--green);
-            /* padding: 10px; */
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
+    .hero__bottom-item {
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--green);
+        /* padding: 10px; */
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
     }
 
     #hero {
@@ -88,9 +88,11 @@
     .hero__top {
         margin-top: 260px;
     }
+
     .hero__bottom-item svg {
         margin-left: 10px;
     }
+
     .hero__top-oneButton,
     .hero__top-twoButton {
         font-size: 14px;
@@ -126,6 +128,8 @@
         transition: all 0.5s ease;
     }
 
+
+
     .mySwiper2 .swiper-slide-active img {
         width: 507px;
         height: 322px;
@@ -141,6 +145,73 @@
         z-index: 1;
         transition: all 0.5s ease;
     }
+
+    .mySwiper2 .swiper-slide-active img {
+        opacity: 1;
+        max-width: 507px;
+        height: 322px;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+
+
+    .mySwiper2 .swiper-slide-next~.swiper-slide img {
+        opacity: 1;
+        max-width: 507px;
+        height: 322px;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+
+    .swiper__bottom-next {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background: #EFB61E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        z-index: 999;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .swiper__bottom-prev {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background: #EFB61E;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .swiper__bottom-next img {
+        width: 11px;
+        height: 9px;
+        object-fit: contain;
+        transform: rotate(180deg);
+    }
+
+    .mySwiper2 .swiper__bottom-prev img {
+        width: 11px;
+        height: 14px;
+        object-fit: contain;
+    }
+    
 
     .steps__items {
         columns: 1;
