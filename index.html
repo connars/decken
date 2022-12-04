@@ -587,9 +587,19 @@
         <section id="calc">
             <div class="container calc">
                 <div class="calc__wrapper">
-                    <form method="POST" action="calp.php">
+                    
+                    <form id="form">
+                        <div style="display: none;" class="calc__left-top calc-m" >
+                            <svg width="72" height="14" viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12.6711L6.30778 4.83557C7.54274 1.91015 11.6884 1.91015 12.9233 4.83557V4.83557C14.1583 7.76099 18.3039 7.76099 19.5389 4.83557V4.83557C20.7738 1.91015 24.9195 1.91015 26.1544 4.83557V4.83557C27.3894 7.76099 31.535 7.76099 32.77 4.83557V4.83557C34.005 1.91015 38.1506 1.91015 39.3856 4.83557V4.83557C40.6205 7.76099 44.7661 7.76099 46.0011 4.83557V4.83557C47.2361 1.91015 51.3817 1.91015 52.6167 4.83557V4.83557C53.8516 7.76099 57.9973 7.76099 59.2322 4.83557V4.83557C60.4672 1.91015 64.6128 1.91015 65.8478 4.83557L69.1555 12.6711" stroke="#fff" stroke-width="5.22371"/>
+                            </svg>
+                            <h2>
+                                Калькулятор цены <br>
+                                 натяжного потолка онлайн
+                            </h2>
+                        </div>
                         <div class="calc__left">
-                            <div class="calc__left-top">
+                            <div class="calc__left-top calc-pc">
                                 <svg width="72" height="14" viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3 12.6711L6.30778 4.83557C7.54274 1.91015 11.6884 1.91015 12.9233 4.83557V4.83557C14.1583 7.76099 18.3039 7.76099 19.5389 4.83557V4.83557C20.7738 1.91015 24.9195 1.91015 26.1544 4.83557V4.83557C27.3894 7.76099 31.535 7.76099 32.77 4.83557V4.83557C34.005 1.91015 38.1506 1.91015 39.3856 4.83557V4.83557C40.6205 7.76099 44.7661 7.76099 46.0011 4.83557V4.83557C47.2361 1.91015 51.3817 1.91015 52.6167 4.83557V4.83557C53.8516 7.76099 57.9973 7.76099 59.2322 4.83557V4.83557C60.4672 1.91015 64.6128 1.91015 65.8478 4.83557L69.1555 12.6711" stroke="#fff" stroke-width="5.22371"/>
                                 </svg>
@@ -600,7 +610,8 @@
                             </div>
                             <div class="calc__left-bottom">
                                 <input class="form-input" type="tel" placeholder="+380 xx xxx xxxx">
-                                <button class="form-btn">ОТПРАВИТЬ</button>
+                                <button id="form-btn" class="form-btn">ОТПРАВИТЬ</button>
+                                <input type="hidden" id="sum "value="">
                                 <label class="checkbox-input" for="">
                                     <input type="checkbox">
                                     <p>Отправляя форму Вы соглашаетесь с обработкой персональных данных и политикой
@@ -610,45 +621,88 @@
                         </div>
                         <div class="calc__right">
                             <div class="calc__right-top">
-                                <select class="calc__selector" name="" id="">
-                                    <option value="">1</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                </select>
-                                <select class="calc__selector" name="" id="">
-                                    <option value="">1</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                </select>
-                                <select class="calc__selector" name="" id="">
-                                    <option value="">1</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                </select>
+                                <p>Материал:</p>
+                                    <select class="calc__selector" name="" id="matherial">
+                                        <option value="10">Материал 1</option>
+                                        <option value="20">Материал 2</option>
+                                        <option value="30">Материал 3</option>
+                                    </select>
+                                <p>Цвет:</p>
+                                    <select class="calc__selector" name="" id="color">
+                                        <option value="10"> Цвет 1</option>
+                                        <option value="20"> Цвет 2</option>
+                                        <option value="30"> Цвет 3</option>
+                                    </select>
+                                <p>Полотоно:</p>
+                                    <select class="calc__selector" name="" id="polotno">
+                                        <option value="10">Полотоно 1</option>
+                                        <option value="20">Полотоно 2</option>
+                                        <option value="30">Полотоно 3</option>
+                                    </select>
                             </div>
                             <div class="calc__right-bottom">
-                                <select class="calc__selector" name="" id="">
-                                    <option value="">1</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                </select>
-                                <select class="calc__selector" name="" id="">
-                                    <option value="">1</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                </select>
-                                <label for="">
-                                    <input type="radio">
-                                    <input type="radio">
-                                </label>
+                                <div>
+                                    <p>
+                                        Кол-во <br> 
+                                        светильников:
+                                    </p>
+                                    <input type="number" placeholder="2" value="" id="lamps">
+                                </div>
+                                <div>
+                                    <p>
+                                        Площадь:
+                                    </p>
+                                    <input type="number" placeholder="" value="" id="meters">    
+                                </div>
                                 
                             </div>
+
+                            <div>
+                                <p>
+                                    Проводка:
+                                </p>
+                                <input type="radio" name="el" id="Choice"
+                                 name="contact" value="1000">
+                                <label for="Choice">Да</label>
+                            
+                                <input type="radio" name="el" id="Choice"
+                                 name="contact" value="0">
+                                <label for="Choice">Нет</label>
+
+                                <div id="error__mesg" style="color: rgb(214, 0, 0); display: none;">Выберите наличие проводки</div>
+                            </div>
+
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <img src="./assets/img/white-logo.svg" alt="">
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link"></a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link"></a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link"></a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link"></a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 

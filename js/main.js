@@ -87,6 +87,38 @@ if (window.outerWidth > 900) {
     });
 }
 
+let form = document.getElementById("form");
+let button = document.getElementById('form-btn');
+
+let metersPrice = 39;
+let lampsPrice = 200;
+
+let sum;
+
+let errorM = document.getElementById("error__mesg");
 
 
 
+button.addEventListener('click', function () {
+    event.preventDefault();
+        let color = +document.getElementById('color').value;
+        let matherial = +document.getElementById('matherial').value;
+        let polotno = +document.getElementById('polotno').value;
+        let lamps = +document.getElementById('lamps').value * lampsPrice;
+        let meters = +document.getElementById('meters').value * metersPrice;
+
+        var radios = document.getElementsByName("el");
+        var selected = Array.from(radios).find(radio => radio.checked);
+
+        if (selected === undefined) {
+            errorM.style.display= "block"
+            console.log(selected);
+        } else {
+            sum = color + matherial + polotno + lamps + meters + Number(selected.value);
+            console.log(sum);
+            // document.getElementById('form').submit();
+        }
+
+});
+
+console.log(sum)

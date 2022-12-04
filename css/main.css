@@ -807,6 +807,7 @@ body {
     border-radius: 20px;
 
     display: flex;
+    gap: 20px;
 }
 
 .calc__left-top {
@@ -829,7 +830,7 @@ body {
 
 .form-btn {
     background-color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 50px;
     width: 100%;
     border: none;
@@ -842,7 +843,7 @@ body {
 
 .form-input {
     margin-bottom: 20px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 2px solid white;
     border-radius: 50px;
     background-color: transparent;
@@ -850,6 +851,50 @@ body {
 }
 
 .form-input::placeholder {
-
     color: white;
+}
+
+#footer {
+    background-color: #4E564F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.calc__selector {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 7px 10px;
+    /* width: 100%; */
+    border: 0; 
+}
+
+.calc__right-top p {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.calc__right-top select {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 7px 10px;
+    width: 100%;
+    border: 0;
+}
+
+.calc__right-bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.calc__right-bottom {
+    gap: 20px;
+}
+
+.calc__right-bottom input {
+    width: 140px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 7px 10px;
+    width: 120px;
+    border: 0;
 }

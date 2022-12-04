@@ -220,4 +220,29 @@
     .navigation__list {
         text-align: center;
     }
+
+    .calc-pc {
+        display: none;
+    }
+
+    #form {
+        flex-wrap: wrap-reverse;
+    }
+
+    .calc__wrapper {
+        padding: 0;
+    }
+
+    .calc-m {
+        display: block !important;
+        order: 1;
+    }
+
+    .calc__left {
+        width: 100%;
+    }
+
+    .calc__right {
+        width: 100%;
+    }
 }
