@@ -175,7 +175,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         z-index: 999;
         user-select: none;
         cursor: pointer;
@@ -194,7 +194,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         user-select: none;
         cursor: pointer;
     }
@@ -211,7 +211,7 @@
         height: 14px;
         object-fit: contain;
     }
-    
+
 
     .steps__items {
         columns: 1;
@@ -238,18 +238,19 @@
         order: 1;
     }
 
-    .calc__right-top p{
-        font-size: 16px;
-    }
-    .calc__right-bottom p{
+    .calc__right-top p {
         font-size: 16px;
     }
 
-    .calc__right-bottomPlus p{
+    .calc__right-bottom p {
         font-size: 16px;
     }
 
-    .calc__right-bottomPlus label{
+    .calc__right-bottomPlus p {
+        font-size: 16px;
+    }
+
+    .calc__right-bottomPlus label {
         font-size: 20px;
     }
 
@@ -257,6 +258,7 @@
         font-size: 24px;
         margin-bottom: 0;
     }
+
     .calc-m svg {
         width: 40px;
     }
@@ -273,11 +275,11 @@
         color: white;
         font-size: 14px;
     }
-    
+
     .calc {
-       padding: 0;
-        
-        
+        padding: 0;
+
+
     }
 
     .swiper__bottom-title {
@@ -294,6 +296,32 @@
         width: 100%;
         max-height: 380px;
         height: 100%;
+    }
+
+    .mySwiper2 .swiper-slide-active img {
+        max-width: 514px;
+        max-height: 380px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mySwiper2 .swiper-slide-next~.swiper-slide img {
+        max-width: 514px;
+        max-height: 380px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mySwiper2 .swiper-slide-next~.swiper-slide~.swiper-slide {
+        visibility: visible;
+        max-width: 514px;
+        max-height: 380px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mySwiper2 {
+        height: 322px;
         margin-bottom: 50px;
     }
 }
