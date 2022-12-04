@@ -275,11 +275,14 @@
     }
     
     .calc {
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+       padding: 0;
         
         
+    }
+
+    .swiper__bottom-title {
+        margin-top: 35px;
+        margin-bottom: 23px;
     }
 
     .calc__wrapper {

@@ -96,11 +96,14 @@ let lampsPrice = 200;
 let sum;
 
 let errorM = document.getElementById("error__mesg");
+let errorMP = document.getElementById("error__mesgP");
+let error_length = document.getElementById("error__mesgP-length");
 
 
 
 button.addEventListener('click', function () {
     event.preventDefault();
+        let phone = document.getElementById("tel").value;
         let color = +document.getElementById('color').value;
         let matherial = +document.getElementById('matherial').value;
         let polotno = +document.getElementById('polotno').value;
@@ -111,8 +114,14 @@ button.addEventListener('click', function () {
         var selected = Array.from(radios).find(radio => radio.checked);
 
         if (selected === undefined) {
-            errorM.style.display= "block"
+            errorM.style.display = "block";
             console.log(selected);
+        } else if (phone.length === 0){
+            errorMP.style.display = "block";
+            console.log(phone);
+        } else if (phone.length < 20){
+            error_length.style.display = "block";
+            console.log(phone);
         } else {
             sum = color + matherial + polotno + lamps + meters + Number(selected.value);
             console.log(sum);

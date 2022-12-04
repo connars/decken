@@ -609,7 +609,10 @@
                                 </h2>
                             </div>
                             <div class="calc__left-bottom">
-                                <input class="form-input" type="tel" placeholder="+380 xx xxx xxxx">
+                                <input class="form-input" id="tel" type="tel" placeholder="+380 xx xxx xxxx">
+                                <div id="error__mesgP" style="color: rgb(214, 0, 0); display: none;">Заполните это поле!</div>
+                                <div id="error__mesgP-length" style="color: rgb(214, 0, 0); display: none;">Слишком много символов</div>
+                                
                                 <button id="form-btn" class="form-btn">ОТПРАВИТЬ</button>
                                 <input type="hidden" id="sum "value="">
                                 <label class="checkbox-input" for="">
