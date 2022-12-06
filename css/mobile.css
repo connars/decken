@@ -322,6 +322,24 @@
 
     .mySwiper2 {
         height: 322px;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header__center img {
+        width: 70px;
+    }
+
+    .header__right {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .header__right-social a img {
+        width: 24px;
+        margin-left: 10px;
     }
 }

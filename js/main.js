@@ -119,7 +119,7 @@ button.addEventListener('click', function () {
         } else if (phone.length === 0){
             errorMP.style.display = "block";
             console.log(phone);
-        } else if (phone.length < 20){
+        } else if (phone.length < 10){
             error_length.style.display = "block";
             console.log(phone);
         } else {
