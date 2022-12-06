@@ -276,11 +276,24 @@ body {
 
 /* HERO */
 #hero {
-    background-image: url(../assets/icons/image\ 66.png);
-    background-repeat: no-repeat;
+    /* background-image: url(../assets/icons/image\ 66.png); */
+    /* background-repeat: no-repeat;
     background-position: right;
-    background-size: 50%;
+    background-size: 50%; */
 }
+
+.hero__img {
+    background-image: url(../assets/icons/image\ 66.png);
+
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    transform: translateY(-140px);
+}
+
 .hero {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -434,11 +447,12 @@ body {
     display: flex;
     gap: 37px;
     margin-bottom: 132px;
+    margin-top: 40px;
 }
 
 .about__img {
     border-radius: 30px;
-    max-width: 501px;
+    width: 601px;
     height: 383px;
     object-fit: cover;
     transition: 0.3s all ease;
@@ -472,7 +486,11 @@ body {
     text-decoration: none;
 }
 
-.about__link {
+.about__title {
+    margin-top: 40px;
+}
+
+/* .about__link {
     padding: 0;
     font-style: normal;
     font-weight: 700;
@@ -484,7 +502,7 @@ body {
     transition: 0.3 all ease;
     width: 120px;
     text-decoration-line: underline;
-}
+} */
 
 .mySwiper .swiper-slide {
     font-size: 18px;
@@ -793,7 +811,7 @@ body {
 .calc {
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .calc__wrapper {
@@ -831,7 +849,7 @@ body {
 
 .form-btn {
     background-color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 50px;
     width: 100%;
     border: none;
@@ -844,7 +862,7 @@ body {
 
 .form-input {
     margin-bottom: 20px;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border: 2px solid white;
     border-radius: 50px;
     background-color: transparent;
@@ -871,6 +889,7 @@ body {
 
 .calc__right-top p {
     margin-bottom: 10px;
+    font-size: 20px;
     margin-top: 20px;
 }
 .calc__right-top select {
@@ -898,6 +917,35 @@ body {
     padding: 7px 10px;
     width: 120px;
     border: 0;
+}
+
+.calc__selector { 
+     
+    appearance: none; 
+    overflow: hidden;
+    background: url('/assets/icons/cheveron-down.svg') no-repeat right ;
+    background-position-x: 96%;
+    transition: 0.3s;
+}
+
+.calc__right-top p:first-child {
+    margin-top: 0;
+}
+
+.calc__right-bottomPlus p {
+    font-size: 20px;
+}
+
+.calc__right-bottom p {
+    font-size: 20px;
+}
+
+.calc__selector {
+    font-size: 20px;
+}
+
+.calc__selector:hover{ 
+    background-position-y: 5px;
 }
 
 #rc-phone {

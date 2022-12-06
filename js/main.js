@@ -4,6 +4,7 @@ let menu = document.getElementById('menu');
 let burger = document.getElementById('burger');
 let cl = document.getElementById('close');
 let bg = document.getElementById('shadow');
+let link2 = document.getElementsByClassName('.navigation__list-item');
 
 
 burger.addEventListener('click', function () {
@@ -28,6 +29,9 @@ cl.addEventListener('click', function () {
         bg.classList.toggle('active');
     }
 });
+
+
+
 
 if (window.outerWidth > 900) {
     let swiper = new Swiper(".mySwiper", {
