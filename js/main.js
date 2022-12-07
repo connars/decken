@@ -2,7 +2,7 @@
 
 let menu = document.getElementById('menu');
 let burger = document.getElementById('burger');
-let cl = document.getElementById('close');
+let cl = document.querySelectorAll('.close');
 let bg = document.getElementById('shadow');
 let link2 = document.getElementsByClassName('.navigation__list-item');
 
@@ -19,16 +19,21 @@ burger.addEventListener('click', function () {
     }
 });
 
-cl.addEventListener('click', function () {
-    if (menu.classList.contains('active')) {
-        // menu.style.display = "none"
-        menu.classList.remove('active');
-        bg.classList.remove('active');
-    } else {
-        menu.classList.toggle('active');
-        bg.classList.toggle('active');
-    }
-});
+for (let i = 0; i < cl.length; i++) {
+    cl[i].addEventListener('click', function () {
+        if (menu.classList.contains('active')) {
+            // menu.style.display = "none"
+            menu.classList.remove('active');
+            bg.classList.remove('active');
+            document.querySelector("body").style.overflowY = "none"
+        } else {
+            menu.classList.toggle('active');
+            bg.classList.toggle('active');
+            document.querySelector("body").style.overflowY = "scroll"
+        }
+    });
+
+}
 
 
 
@@ -107,37 +112,37 @@ let error_length = document.getElementById("error__mesgP-length");
 
 button.addEventListener('click', function () {
     event.preventDefault();
-        let phone = document.getElementById("tel").value;
-        let color = +document.getElementById('color').value;
-        let matherial = +document.getElementById('matherial').value;
-        let polotno = +document.getElementById('polotno').value;
-        let lamps = +document.getElementById('lamps').value * lampsPrice;
-        let meters = +document.getElementById('meters').value * metersPrice;
+    let phone = document.getElementById("tel").value;
+    let color = +document.getElementById('color').value;
+    let matherial = +document.getElementById('matherial').value;
+    let polotno = +document.getElementById('polotno').value;
+    let lamps = +document.getElementById('lamps').value * lampsPrice;
+    let meters = +document.getElementById('meters').value * metersPrice;
 
-        var radios = document.getElementsByName("el");
-        var selected = Array.from(radios).find(radio => radio.checked);
+    var radios = document.getElementsByName("el");
+    var selected = Array.from(radios).find(radio => radio.checked);
 
-        if (selected === undefined) {
-            errorM.style.display = "block";
-            console.log(selected);
-        } else if (phone.length === 0){
-            errorMP.style.display = "block";
-            console.log(phone);
-        } else if (phone.length < 10){
-            error_length.style.display = "block";
-            console.log(phone);
-        } else {
-            sum = color + matherial + polotno + lamps + meters + Number(selected.value);
-            console.log(sum);
-            // document.getElementById('form').submit();
-        }
+    if (selected === undefined) {
+        errorM.style.display = "block";
+        console.log(selected);
+    } else if (phone.length === 0) {
+        errorMP.style.display = "block";
+        console.log(phone);
+    } else if (phone.length < 10) {
+        error_length.style.display = "block";
+        console.log(phone);
+    } else {
+        sum = color + matherial + polotno + lamps + meters + Number(selected.value);
+        console.log(sum);
+        // document.getElementById('form').submit();
+    }
 
 });
 
 console.log(sum)
 
 
-document.querySelector('#rc-phone-icon').addEventListener("click", function(){   
+document.querySelector('#rc-phone-icon').addEventListener("click", function () {
     this.classList.toggle('open');
     document.getElementById('rc-phone').classList.toggle('open');
 });
