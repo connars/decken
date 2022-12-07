@@ -25,7 +25,7 @@ for (let i = 0; i < cl.length; i++) {
             // menu.style.display = "none"
             menu.classList.remove('active');
             bg.classList.remove('active');
-            document.querySelector("body").style.overflowY = "none"
+            document.querySelector("body").style.overflowY = "hidden"
         } else {
             menu.classList.toggle('active');
             bg.classList.toggle('active');
