@@ -190,8 +190,6 @@
         right: 5%;
         top: 50%;
         transform: translateY(-50%);
-        width: 39px;
-        height: 39px;
         border-radius: 50%;
         background: #EFB61E;
         display: flex;
@@ -208,8 +206,6 @@
         left: 5%;
         top: 50%;
         transform: translateY(-50%);
-        width: 39px;
-        height: 39px;
         border-radius: 50%;
         background: #EFB61E;
         z-index: 999;
@@ -222,15 +218,11 @@
     }
 
     .swiper__bottom-next img {
-        width: 11px;
-        height: 9px;
         object-fit: contain;
         transform: rotate(180deg);
     }
 
     .mySwiper2 .swiper__bottom-prev img {
-        width: 11px;
-        height: 14px;
         object-fit: contain;
     }
 
