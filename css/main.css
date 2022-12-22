@@ -276,11 +276,24 @@ body {
 
 /* HERO */
 #hero {
-    background-image: url(../assets/icons/image\ 66.png);
-    background-repeat: no-repeat;
+    /* background-image: url(../assets/icons/image\ 66.png); */
+    /* background-repeat: no-repeat;
     background-position: right;
-    background-size: 50%;
+    background-size: 50%; */
 }
+
+.hero__img {
+    background-image: url(../assets/icons/image\ 66.png);
+
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    transform: translateY(-140px);
+}
+
 .hero {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -434,11 +447,12 @@ body {
     display: flex;
     gap: 37px;
     margin-bottom: 132px;
+    margin-top: 40px;
 }
 
 .about__img {
     border-radius: 30px;
-    max-width: 501px;
+    width: 601px;
     height: 383px;
     object-fit: cover;
     transition: 0.3s all ease;
@@ -472,7 +486,11 @@ body {
     text-decoration: none;
 }
 
-.about__link {
+.about__title {
+    margin-top: 40px;
+}
+
+/* .about__link {
     padding: 0;
     font-style: normal;
     font-weight: 700;
@@ -484,7 +502,7 @@ body {
     transition: 0.3 all ease;
     width: 120px;
     text-decoration-line: underline;
-}
+} */
 
 .mySwiper .swiper-slide {
     font-size: 18px;
@@ -793,7 +811,7 @@ body {
 .calc {
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .calc__wrapper {
@@ -831,7 +849,7 @@ body {
 
 .form-btn {
     background-color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 50px;
     width: 100%;
     border: none;
@@ -844,7 +862,7 @@ body {
 
 .form-input {
     margin-bottom: 20px;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border: 2px solid white;
     border-radius: 50px;
     background-color: transparent;
@@ -871,6 +889,7 @@ body {
 
 .calc__right-top p {
     margin-bottom: 10px;
+    font-size: 20px;
     margin-top: 20px;
 }
 .calc__right-top select {
@@ -898,6 +917,35 @@ body {
     padding: 7px 10px;
     width: 120px;
     border: 0;
+}
+
+.calc__selector { 
+     
+    appearance: none; 
+    overflow: hidden;
+    background: url('/assets/icons/cheveron-down.svg') no-repeat right ;
+    background-position-x: 96%;
+    transition: 0.3s;
+}
+
+.calc__right-top p:first-child {
+    margin-top: 0;
+}
+
+.calc__right-bottomPlus p {
+    font-size: 20px;
+}
+
+.calc__right-bottom p {
+    font-size: 20px;
+}
+
+.calc__selector {
+    font-size: 20px;
+}
+
+.calc__selector:hover{ 
+    background-position-y: 5px;
 }
 
 #rc-phone {
@@ -939,3 +987,154 @@ body {
 #rc-phone.open form {transform:translate(0,0)}
 #rc-phone.open #rc-phone-icon:after {opacity: 1; transform: translate(-50%,-50%) rotate(-360deg);}
 #rc-phone.open #rc-phone-icon:before {opacity: 0; transform: translate(-50%,-50%) rotate(-360deg);}
+
+
+/* cards */
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+.card_color {
+   
+    background: var(--yellow);
+    transition: 0.3 all ease;
+
+    
+}
+
+.card {
+    display: block;
+    width: 320px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+
+    
+    transition: 0.3s all ease;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card_icon svg path {
+    transition: 0.3s;
+}
+
+.card:hover .card_icon svg path {
+    
+    fill: var(--yellow);
+}
+
+
+
+.card_icon {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.card_title {
+    display: flex;
+
+    text-align: center;
+    margin: 10px 0 ;
+
+    font-size: 23px;
+
+}
+
+.card_svg {
+    display: flex;
+    margin: auto;
+}
+
+.card_text {
+    margin-top: 20px;
+
+    
+}
+
+.card_ul {
+    list-style: none ;
+    padding: 0;
+    
+}
+
+.card_text {
+    padding-left: 1.3em;
+}
+
+.card_text:before {
+    
+    content: "-";
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--green); /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    margin-left: -10px;
+     
+    
+    width: 10px;
+    height: 10px;
+}
+
+.footer {
+
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__wrapper img {
+    margin-left: 90px;
+}
+
+.footer__list-wrapper {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: none;
+}
+
+.footer__list {
+    margin-left: 70px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__item-item {
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer__item-link {
+    color: var(--green);
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer__item-link:hover {
+    color: #849e8782;
+}
